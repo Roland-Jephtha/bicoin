@@ -46,7 +46,7 @@ def about(request):
       
         'url': base_url,
     }  
-    return render(request, 'about.html', context)
+    return render(request, 'About.html', context)
 
 
 def contact(request):
@@ -69,7 +69,7 @@ def contact(request):
         "contacts":contact
     }  
         
-    return render(request, 'contact.html', context)
+    return render(request, 'Contact.html', context)
 
 
 
