@@ -65,11 +65,9 @@ def contact(request):
         contacts.save()
         messages.success(request, 'We received your Message we will get back to you soon!!!')
     contact = Contact.objects.all() 
-    context = {
-        "contacts":contact
-    }  
+ 
         
-    return render(request, 'Contact.html', context)
+    return render(request, 'Contact.html')
 
 
 
