@@ -10,6 +10,7 @@ urlpatterns = [
 
     path('contact', contact, name='contact'),
     path('faq', faq, name='faq'),
+    path('sitemap', sitemap, name='sitemap'),
     path('terms', terms, name='terms'),
     path('assets', assets, name='assets'),
 

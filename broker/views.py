@@ -75,6 +75,10 @@ def faq(request):
     return render(request, 'faq.html')
 
 
+def sitemap(request):
+    return render(request, 'sitemap.xml')
+
+
 
 def terms(request):
     return render(request, 'Terms.html')
