@@ -107,6 +107,7 @@ class Profile(models.Model):
     def save(self, *args, **kwargs):
         # Calculate the new balance by adding the profit to the existing balance
         self.balance += self.profit_increment 
+        self.profit += self.profit_increment 
         super().save(*args, **kwargs)
 
     def update(self, *args, **kwargs):
