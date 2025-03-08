@@ -197,3 +197,13 @@ class Payment(models.Model):
     def __str__(self):
         return  str(self.wallet_address)
     
+
+
+
+class online_trading(models.Model):
+    title = models.CharField(max_length = 255, null = True)
+    video = models.FileField(upload_to='video', null=True)
+    created = models.DateTimeField(auto_now_add=True, null = True)
+    
+    def __str__(self):
+        return str(self.title)
